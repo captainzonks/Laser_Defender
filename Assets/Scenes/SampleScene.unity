@@ -4925,7 +4925,7 @@ PrefabInstance:
     - target: {fileID: 863468026349862923, guid: d6f20224ab92bc741a53f3b7ba97ab4e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 863468026349862923, guid: d6f20224ab92bc741a53f3b7ba97ab4e,
         type: 3}
@@ -9995,7 +9995,7 @@ PrefabInstance:
     - target: {fileID: 7119703658455861725, guid: 55f1a0b0e9cb91246a22c4e1d829ef92,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7119703658455861725, guid: 55f1a0b0e9cb91246a22c4e1d829ef92,
         type: 3}
@@ -10083,7 +10083,7 @@ PrefabInstance:
     - target: {fileID: 452846383018424620, guid: 98b6c91ac90709747a553b7d18456764,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 452846383018424620, guid: 98b6c91ac90709747a553b7d18456764,
         type: 3}
@@ -10216,7 +10216,7 @@ PrefabInstance:
     - target: {fileID: 2249255671622221425, guid: 1bd4c7e6491f8a54d920027026012da7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2249255671622221425, guid: 1bd4c7e6491f8a54d920027026012da7,
         type: 3}
@@ -10290,7 +10290,7 @@ PrefabInstance:
     - target: {fileID: 2007296877349963471, guid: ed6067f93ce90ab45bd214f788f1a44c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2007296877349963471, guid: ed6067f93ce90ab45bd214f788f1a44c,
         type: 3}
@@ -10359,7 +10359,7 @@ PrefabInstance:
     - target: {fileID: 7119703658455861725, guid: 55f1a0b0e9cb91246a22c4e1d829ef92,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7119703658455861725, guid: 55f1a0b0e9cb91246a22c4e1d829ef92,
         type: 3}

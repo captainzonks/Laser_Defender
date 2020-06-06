@@ -9,13 +9,21 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float maxTimeBetweenShots = 3f;
     [SerializeField] private GameObject projectile;
     [SerializeField] private float projectileSpeed = 10f;
+    [SerializeField] private GameObject deathVFX;
+    [SerializeField] private float durationOfExplosion = 1f;
 
-    void Start()
+    [Header("SoundFX")]
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] [Range(0,1)] private float deathSoundVolume = 0.7f;
+    [SerializeField] private AudioClip shootSound;
+    [SerializeField] [Range(0, 1)] private float shootSoundVolume = 0.25f;
+
+    private void Start()
     {
         shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
     }
 
-    void Update()
+    private void Update()
     {
         CountDownAndShoot();
     }
@@ -34,6 +42,7 @@ public class Enemy : MonoBehaviour
     {
         var laser = Instantiate(projectile, transform.position, Quaternion.identity);
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
+        AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position, shootSoundVolume);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -49,7 +58,15 @@ public class Enemy : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        var explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+        Destroy(explosion, durationOfExplosion);
+        AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
     }
 }
